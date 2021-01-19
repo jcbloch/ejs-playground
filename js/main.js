@@ -8,7 +8,7 @@
           ;
 
         try {
-            result = ejs.render(input)
+            result = ejs.compile(input)
             $result.parentNode.style.background = "#27ae60";
         } catch (e) {
             result = e.stack;
